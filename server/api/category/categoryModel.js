@@ -4,7 +4,7 @@ var Schema = mongoose.Schema;
 var CategorySchema = new Schema({
   name: {
     type: String,
-    unique: true,
+    unique: true, //"I'm a unique category"
     required: true
   }
 });

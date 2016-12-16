@@ -18,7 +18,12 @@ var PostSchema = new Schema({
          ref: 'user',
          required:true
         }
-
+   //Reference    to categories in postModel.js  
+  categories: {
+    type: Schema.Types.ObjectId,
+    ref: 'category',
+    required:true
+  }
 });
 
 module.exports = mongoose.model('post', PostSchema);
