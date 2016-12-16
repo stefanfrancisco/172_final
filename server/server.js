@@ -23,6 +23,7 @@ app.use('/api/', api);
 app.use(function(err, req, res, next) {
 	res.send("500 error: " + err.toString());
 });
+
 // API endpoints such as below has been moved to user Router within api module
 //app.get('/user', function(req, res) {
    // res.send([{username:'wine1'}, {username:'wine2'}]);
